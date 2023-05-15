@@ -16,14 +16,23 @@ video: Chapter 2 - Part 3
  
  1) Write down the names of the 6 major primitive types available in C++  here:
  
+ // Integer (1, 2, -3)
+ int
+
+ // Double (1.50123)
+ double
+
+ // Boolean (true/false)
+ bool
+
+ // Long (-900000)
+long
  
+ // Float (3.14159)
+ float
  
- 
- 
- 
- 
- 
- 
+ // Char ('h')
+ char
  
 2) for each primitive type, write out 3 variable declarations inside the variableDeclaration() function on line 59.
     a) give each variable declaration an initial value
@@ -64,10 +73,70 @@ void variableDeclarations()
 {
     //example:
     int number = 2; //declaration of a variable named "number", that uses the primitive type 'int', and the variable's initial value is '2'
+
+    // ----------------------------------------------
+    // Integers
+    int numberOfPlayers = 10;
+
+    int daysLeft = 48;
+
+    int totalAttending = 102;
+
+    // Double
+    double accountBalance = 1.4560004165;
+
+    double mathPI = 3.14159;
+
+    double qualityFactor = 2.22;
     
+    // Boolean
+    bool enteredBuilding = true;
+
+    bool takenStairs = false;
+
+    bool liftWorking = true;
+
+    // Long
+    long populationCountUK = 68905073;
+
+    long wowClassicOnlinePlayers = 795024;
+
+    long abletonLiveUsers = 2300000;
+ 
+    // Float
+    float damagePerSecond = 10.56488f;
+
+    float timeToLoadFile = 0.4455f;
+
+    float bitCoinValue = 59.00125f;
+ 
+    // Char
+    char maleIDLetter = 'M';
+
+    char femaleIDLetter = 'F';
+
+    char assignedGrade = 'b';    
 
     
     ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
+    ignoreUnused(numberOfPlayers);
+    ignoreUnused(daysLeft);
+    ignoreUnused(totalAttending);
+    ignoreUnused(accountBalance);
+    ignoreUnused(mathPI);
+    ignoreUnused(qualityFactor);
+    ignoreUnused(enteredBuilding);
+    ignoreUnused(takenStairs);
+    ignoreUnused(liftWorking);
+    ignoreUnused(populationCountUK);
+    ignoreUnused(wowClassicOnlinePlayers);
+    ignoreUnused(abletonLiveUsers);
+    ignoreUnused(damagePerSecond);
+    ignoreUnused(timeToLoadFile);
+    ignoreUnused(bitCoinValue);
+    ignoreUnused(maleIDLetter);
+    ignoreUnused(femaleIDLetter);
+    ignoreUnused(assignedGrade);
 }
 
 /*
