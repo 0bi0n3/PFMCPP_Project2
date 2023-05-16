@@ -117,26 +117,9 @@ void variableDeclarations()
 
     char assignedGrade = 'b';    
 
-    
-    ignoreUnused(number); //passing each variable declared to the ignoreUnused() function
-    ignoreUnused(numberOfPlayers);
-    ignoreUnused(daysLeft);
-    ignoreUnused(totalAttending);
-    ignoreUnused(accountBalance);
-    ignoreUnused(mathPI);
-    ignoreUnused(qualityFactor);
-    ignoreUnused(enteredBuilding);
-    ignoreUnused(takenStairs);
-    ignoreUnused(liftWorking);
-    ignoreUnused(populationCountUK);
-    ignoreUnused(wowClassicOnlinePlayers);
-    ignoreUnused(abletonLiveUsers);
-    ignoreUnused(damagePerSecond);
-    ignoreUnused(timeToLoadFile);
-    ignoreUnused(bitCoinValue);
-    ignoreUnused(maleIDLetter);
-    ignoreUnused(femaleIDLetter);
-    ignoreUnused(assignedGrade);
+    // ----------------------------------------------
+
+    ignoreUnused(number, numberOfPlayers, daysLeft, totalAttending, accountBalance, mathPI, qualityFactor, enteredBuilding, takenStairs, liftWorking, populationCountUK, wowClassicOnlinePlayers, abletonLiveUsers, damagePerSecond, timeToLoadFile, bitCoinValue, maleIDLetter, femaleIDLetter, assignedGrade); //passing each variable declared to the ignoreUnused() function
 }
 
 /*
@@ -154,41 +137,110 @@ bool rentACar(int rentalDuration, int carType = 0)  //function declaration with 
  1)
  */
 
+int countTotalPlayersOnline(int playerIDNumber, bool playerOnline, int timeSinceLastLogin)
+{
+    ignoreUnused(playerIDNumber, playerOnline, timeSinceLastLogin);
+
+    return {};
+}
+
 /*
  2)
  */
 
+bool checkCollisionStatus(bool actorMoving, int surfaceType, float distanceMarker)
+{
+    ignoreUnused(actorMoving, surfaceType, distanceMarker);
+
+    return {};
+}
 /*
  3)
  */
 
+float getCurrentVolume(double inputSignal, float faderPosition)
+{
+    ignoreUnused(inputSignal, faderPosition);
+
+    return {};
+}
 /*
  4)
  */
+
+double dealDamage(double damagePerSec, char attackType, int attackTrig)
+{
+    ignoreUnused(damagePerSec, attackType, attackTrig);
+
+    return {};
+}
 
 /*
  5)
  */
 
+long displayPopulationTotal(int countryID, bool isPopCountAvailable)
+{
+    ignoreUnused(countryID, isPopCountAvailable);
+
+    return {};
+}
+
 /*
  6)
  */
+
+int runToLoctation(char weightCatagory, int distanceToTravelKM, double speedSpecOfShoes)
+{
+    ignoreUnused(weightCatagory, distanceToTravelKM, speedSpecOfShoes);
+
+    return {};
+}
 
 /*
  7)
  */
 
+float lpfAudioChannel(float inputStream, int filterType, int filterOrder)
+{
+    ignoreUnused(inputStream, filterType, filterOrder);
+
+    return {};
+}
+
 /*
  8)
  */
+
+double exportAudioFile(float audioOutputChannel, bool isAudioChannelSilent, int fileFormat)
+{
+    ignoreUnused(audioOutputChannel, isAudioChannelSilent, fileFormat);
+
+    return {};
+}
 
 /*
  9)
  */
 
+float delayAudioMasterChannel(float audioMasterInputChannel, double preDelay, double delayTime)
+{
+    ignoreUnused(audioMasterInputChannel, preDelay, delayTime);
+
+    return {};
+}
+
 /*
  10)
  */
+
+char stampIDWithCatagory(int idNumber, char cataoryType, bool checkIfAlreadyStamped, char overWriteStamp)
+{
+    ignoreUnused(idNumber, cataoryType, checkIfAlreadyStamped, overWriteStamp);
+
+    return {};
+}
+
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -210,27 +262,38 @@ int main()
     auto carRented = rentACar(6, 2); 
     
     //1)
+    auto playersOnline = countTotalPlayersOnline(200, true, 48);
     
     //2)
+    auto collidedWithObject = checkCollisionStatus(true, 15, 12.44f);
     
     //3)
+    auto volumeLevelNow = getCurrentVolume(44.100, 1.75f);
     
     //4)
+    auto damageDone = dealDamage(15.9686, 's', 22);
     
     //5)
+    auto selectedCountryPopulation = displayPopulationTotal(27, true);
     
     //6)
+    auto moveToLocation = runToLoctation('L', 12, 49.774758);
     
     //7)
+    auto filterChannelLP = lpfAudioChannel(12.5f, 2, 10);
     
     //8)
+    auto saveAudioFile = exportAudioFile(16.0f, false, 5);
     
     //9)
+    auto delaySFX = delayAudioMasterChannel(20.40f, 29.9999, 30.1230);
     
     //10)
-    
-    
-    ignoreUnused(carRented);
+    auto stampedDoc = stampIDWithCatagory(22, 'm', false, 'Y');
+
+// ----------------------------------------------
+   
+    ignoreUnused(carRented, playersOnline, collidedWithObject, volumeLevelNow, damageDone, selectedCountryPopulation, moveToLocation, filterChannelLP, saveAudioFile, delaySFX, stampedDoc);
     std::cout << "good to go!" << std::endl;
     return 0;    
 }
